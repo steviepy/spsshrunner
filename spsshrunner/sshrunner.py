@@ -37,7 +37,7 @@ class SshRunner:  # pylint:disable=too-many-instance-attributes
         self.level_down = level_down
         self.fail_fast = fail_fast
         self.look_for = look_for
-        self.remarkable_response = None
+        self.remarkable_response: List[str] = []
 
         init(autoreset=True)
 
